@@ -1,0 +1,475 @@
+
+
+
+.navbar {
+    background-color: black;
+    overflow: hidden;
+  }
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+
+  .navbar a:hover {
+    color: goldenrod;
+    
+  }
+
+  .navbar a.logo {
+    float: left; /* Logo on left */
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 768px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.logo {display: block;} /* Show logo on small screens */
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .logo {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+/*section 2 ---===================================================================*/
+.sec2 {
+    display: flex;
+    flex-direction: column; /* Change flex direction to stack elements vertically on small screens */
+    background-image: url('https://static.wixstatic.com/media/956c3a_b67a9fac301e4cb69409611ea2cc90cc~mv2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem; /* Add padding for better spacing */
+}
+
+.sec2 div {
+    margin-left: 0; /* Reset margin for smaller screens */
+    margin-bottom: 1rem; /* Add bottom margin for spacing between elements */
+}
+
+.sec2 h1 {
+    color: rgb(255, 215, 0);
+    font-size: 2rem; /* Adjust font size for smaller screens */
+}
+
+.sec2 h2 {
+    color: antiquewhite;
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+}
+
+.sec2 p {
+    font-weight: bold;
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    font-family: 'Times New Roman', Times, serif;
+    color: antiquewhite;
+}
+
+.sec2 img {
+    margin: 0 auto; /* Center image horizontally */
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+}
+.contact{
+    color: antiquewhite;
+    border: 2px solid goldenrod; /* Golden border */
+    border-radius: 10px; /* Round corners */
+    padding: 10px; /* Add padding for spacing */
+    display: inline-block;
+
+    
+}
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  .sec2 {
+      flex-direction: row; /* Switch back to horizontal layout for larger screens */
+  }
+
+  .sec2 div{
+    margin-left: 4rem;
+    margin-bottom: 0;
+  }
+
+  .sec2 h1 {
+      font-size: 3rem; 
+  }
+
+  .sec2 h2 {
+      font-size: 2rem; 
+  }
+
+  .sec2 p {
+      font-size: 1.2rem; 
+  }
+}
+
+/* section 3 css========================*/
+.sec3{
+    
+    background-color: black;
+}
+
+.sec3 h1,h3 {
+    
+    text-align: center;
+    color: rgb(255, 215, 0);
+    font-size: 2rem; 
+}
+.sec3 p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: antiquewhite;
+
+}
+.sec3contact{
+    
+    color: antiquewhite;
+    border: 2px solid goldenrod; /* Golden border */
+    border-radius: 10px; /* Round corners */
+    padding: 10px; /* Add padding for spacing */
+    display: inline-block;
+
+}
+/*section 4  card section=============================================================================*/
+
+.card-container {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .card-container p{
+    font-weight: bold;
+    font-size: 1rem; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:black;
+
+  }
+  .card-container a {
+    text-decoration: none;
+  }
+  .card {
+    background-color: black;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .card {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .card {
+      width: 100%;
+    }
+  }
+
+  /*  section 5====================================================*/
+  .sec5 {
+    display: flex;
+    flex-direction: column; /* Change flex direction to stack elements vertically on small screens */
+    background-image: url('https://static.wixstatic.com/media/956c3a_e621ed12464e4a62b5265a0d94296c94~mv2.webp/v1/fill/w_590,h_491,al_c,q_80,enc_auto/956c3a_e621ed12464e4a62b5265a0d94296c94~mv2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem; /* Add padding for better spacing */
+}
+.sec5 p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: antiquewhite;
+}
+.sec5 h1 {
+  text-align: center;
+  color: rgb(255, 215, 0);
+  font-size: 2rem; /* Adjust font size for smaller screens */
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  .sec5 {
+      flex-direction: column; /* Switch back to horizontal layout for larger screens */
+  }
+
+  .sec5 h1 {
+      font-size: 3rem; 
+  } 
+  .sec5 p {
+      font-size: 2rem; 
+  }
+  
+}
+
+/*===============Section 6============================================================================*/
+.sec6{
+  
+  background-color: black;
+}
+.sec6 p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: antiquewhite;
+}
+.sec6 h1 {
+  text-align: center;
+  color: rgb(255, 215, 0);
+  font-size: 2rem; 
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  .sec6 h1 {
+      font-size: 3rem; 
+  } 
+  .sec6 p {
+      font-size: 1rem; 
+  }
+  
+}
+
+
+.sec6-1{
+  margin-left: 5rem;
+  margin-right: 5rem;
+  
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+  
+.circular-frame {
+  width: 300px; /* Set the width and height of the circular frame */
+  height: 300px;
+  border-radius: 50%; /* Apply circular shape with 50% border-radius */
+  overflow: hidden; /* Hide any content that goes beyond the circular frame */
+  
+  align-content: center;
+  background-size: cover; /* Crop the image to fit the circular frame */
+  background-position: center center; /* Center the image within the frame */
+  background-repeat: no-repeat;
+  border: 8px solid goldenrod;
+}
+.circular-frame h2{
+  text-align: center;
+  color: antiquewhite;
+
+}
+.circular-frame h3{
+  text-align: center;
+  color: antiquewhite;
+
+}
+.sec6-2{
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  
+}
+.sec6-2 p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: antiquewhite;
+}
+.sec6-2 h1 {
+  text-align: center;
+  color: goldenrod;
+  font-size: 2rem; 
+}
+@media screen and (max-width: 768px) {
+  .sec6-1 {
+    flex-direction: column; /* Display circular frames in a vertical line */
+    align-items: center; /* Center the circular frames horizontally */
+  }
+  
+  .circular-frame {
+    margin-bottom: 20px; 
+  }
+  .sec6-2 h1 {
+    font-size: 2rem; 
+} 
+.sec6-2 p {
+    font-size: 1rem; 
+}
+
+}
+
+/*Section 7======================================================*/
+.sec7{
+  background-image: url('https://static.wixstatic.com/media/956c3a_b67a9fac301e4cb69409611ea2cc90cc~mv2.webp');
+  background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.sec7-content{
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+.sec7-content h1{
+  text-align: center;
+  color: goldenrod;
+  font-size: 2rem; 
+
+}
+.sec7-content h3{
+  text-align: center;
+  color: rgb(243, 206, 111);
+  font-size: 2rem; 
+
+}
+.sec7-content p{
+  font-size: 1.5rem;
+  text-align: center;
+  color: antiquewhite;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.sec7-content ol{
+  
+    font-size: 1.5rem; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: antiquewhite;
+  
+}
+@media screen and (max-width: 768px) {
+  .sec7-content{
+    margin: 1px;
+  }
+  .sec7-content h1{
+    font-size: 1.5rem;
+  }
+  .sec7-content h3{
+    font-size: 1.5rem;
+  }
+  .sec7-content ol{
+    font-size: 1rem;   
+  }
+  .sec7-content p{
+    font-size: 1rem;
+  }
+}
+
+/* FAQ Section=========================================================================================*/
+.FAQ{
+  background-color: black;
+}
+.FAQ-question{
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+.FAQ-question h1{
+  text-align: center;
+  color: goldenrod;
+  font-size: 2rem; 
+}
+.FAQ-question p{
+  font-size: 1.2rem;
+  
+  color: antiquewhite;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.FAQ-question  ol{
+  
+  font-size: 1.5rem; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: goldenrod;
+
+}
+
+@media screen and (max-width: 768px) {
+  .FAQ-question{
+    margin: 1px;
+  }
+  .FAQ-question h1{
+    font-size: 1.5rem;
+  }
+ 
+  .FAQ-question ol{
+    font-size: 1rem;   
+  }
+  .FAQ-question p{
+    font-size: 1rem;
+  
+}
+}
+
+/*Social media==============================================*/
+.social-media{
+  margin-top: 7rem;
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+.social-medias{
+  margin-left: 15rem;
+  margin-right: 15rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media hr{
+  border: 4px solid gold; 
+    border-radius: 10px; 
+}
+
+@media screen and (max-width: 768px) {
+  .social-media{
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .social-medias{
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
+}
+
+
+/* FOOTER ======================================*/
+.foot{
+  background-color: black;
+
+}
+.foot h6{
+  text-align: center;
+  color: antiquewhite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
